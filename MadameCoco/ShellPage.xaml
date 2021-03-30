@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell      FlyoutIcon="https://webstockreview.net/images600_/hamburger-icon-png-13.png"   FlyoutBackgroundColor="AliceBlue"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MadameCoco.ViewPages"
+             x:Class="MadameCoco.ShellPage">
+
+    <FlyoutItem  FlyoutDisplayOptions="AsMultipleItems"  >
+        <ShellContent   ContentTemplate="{DataTemplate local:HomePage}">
+             </ShellContent>
+
+
+
+        <ShellContent Icon="user.png" Title="GİRİŞ YAP / ÜYE OL " Route="KayıtPage" ContentTemplate="{DataTemplate local:KayıtPage}"/>
+        <ShellContent Title="FAVORİLER" Route="FavPage" ContentTemplate="{DataTemplate local:FavPage}"/>
+        <ShellContent  Title="YATAK ODASI" Route="YatakPage" ContentTemplate="{DataTemplate local:YatakPage}"/>
+        <ShellContent Title="BANYO" Route="BanyoPage" ContentTemplate="{DataTemplate local:BanyoPage}"/>
+        <ShellContent Title="MUTFAK" Route="MutfakPage" ContentTemplate="{DataTemplate local:MutfakPage}"/>
+        <ShellContent Title="SOFRA" Route="SofraPage" ContentTemplate="{DataTemplate local:SofraPage}"/>
+
+     </FlyoutItem>
+
+    
+</Shell>
+                  
+    
+        

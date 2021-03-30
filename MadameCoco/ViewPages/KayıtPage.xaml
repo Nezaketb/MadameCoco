@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadameCoco.ViewPages.KayıtPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout>
+               <ImageButton x:Name="backkayıtbtn" Source="back.png" WidthRequest="50" HeightRequest="50" Clicked="Backkayıtbtn_Clicked"></ImageButton>
+               <Label Text="GİRİŞ YAP" HorizontalOptions="Center" FontSize="Subtitle"/>
+             </FlexLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

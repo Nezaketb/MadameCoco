@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadameCoco.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="AliceBlue" Padding="24" CornerRadius="0"  >
+                <Label Text="MADAME COCO" TextColor="Black"  FontSize="30"></Label>
+            </Frame>
+          
+            
+            <Label Text="75 TL Üzeri Kargo Bedava" HorizontalTextAlignment="Center" TextColor="Black" BackgroundColor="Gray" HorizontalOptions="Fill"></Label>
+            <FlexLayout Direction="Row">
+                <SearchBar Placeholder="Arama" ></SearchBar>
+                <ImageButton Source="barcode.png" HorizontalOptions="End" ></ImageButton>
+            </FlexLayout>
+            <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/22/b6219bb5-4c6e-44ec-b6b9-293ea01cfdd0.jpg"></ImageButton>
+            <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/23/96149609-2799-44c9-b802-420e48238072.jpg"></ImageButton>
+            <Label Text="Renge göre seçim yap" HorizontalOptions="Center" TextColor="Black" FontSize="Body" ></Label>
+            <Label Text="Online'a Özel Kampanyalarımız" HorizontalOptions="Center" TextColor="Black"></Label>
+
+            <FlexLayout Direction="Row">
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/05441fa7-8968-4049-b7be-d592ff3fe112.png"></ImageButton>
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/c26ac3be-097e-459a-bb23-3a80cb064bee.png"></ImageButton>
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/83c08820-80d0-442a-945f-990d4cb6842d.png"></ImageButton>
+
+
+
+            </FlexLayout>
+
+            <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/17/9cda3726-5b5f-4977-8c71-22ce54c67b18.jpg"></ImageButton>
+
+            <FlexLayout Direction="Row">
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/24/bfd2c68c-b2f1-4799-98f9-66deb91a02a8.png"></ImageButton>
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/961c3b99-dc6d-4018-9c60-66967d31d73c.png"></ImageButton>
+            </FlexLayout>
+            <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/02/15/e7af9787-ebeb-4276-bf2a-165713eabb70.jpg"></ImageButton>
+
+            <FlexLayout Direction="Row">
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/25/66204790-5a9a-4256-bc35-29a92ff88f78.png"></ImageButton>
+                <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/3ecf793f-88e7-4852-8bb7-2b3ae2eaf5e2.png"></ImageButton>
+
+            </FlexLayout>
+
+            <ImageButton x:Name="Btnpisirme" Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/b5d8ed69-2fbb-4a0d-945a-b984892d0e8c.png" ></ImageButton>
+            <ImageButton x:Name="Btnyemektakim" Source="https://cdn-mgsm.akinon.net/cms/2021/03/15/4d2a93d5-73ce-43a2-8071-fa051e5f075a.png" ></ImageButton>
+
+
+
+
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

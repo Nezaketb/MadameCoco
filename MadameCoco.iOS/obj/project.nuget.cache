@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LjmZhjyq9pLT6gS0BflL/kphSxDDsdrWap62JpoZAq5psWt0IniIxYds783X/W9FOqf/qs06aB3if2V6Zbbq1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LenovA\\source\\repos\\MadameCoco\\MadameCoco.iOS\\MadameCoco.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LenovA\\.nuget\\packages\\nuget.exe\\3.4.3\\nuget.exe.3.4.3.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
