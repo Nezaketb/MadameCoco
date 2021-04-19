@@ -11,5 +11,10 @@ namespace MadameCoco.ViewPages
         {
             InitializeComponent();
         }
+
+        private async void ToolbarItem_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new SepetPage());
+        }
     }
 }

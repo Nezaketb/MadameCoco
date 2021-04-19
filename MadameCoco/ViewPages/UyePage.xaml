@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadameCoco.ViewPages.UyePage"
+             >
+    
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Frame BackgroundColor="White" >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton x:Name="Backkayıt" Source="back.png" WidthRequest="20"  HeightRequest="20" Clicked="Backkayıt_Clicked"></ImageButton>
+                    <Label Text="ÜYE OL" TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="25" FontAttributes="Bold"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" BorderColor="Gray" Margin="30" WidthRequest="150">
+                <StackLayout Orientation="Vertical">
+
+                    <Entry x:Name="EntryAd" Placeholder="Ad" Keyboard="Text"></Entry>
+                    <Entry x:Name="EntrySoyad" Placeholder="Soyad" Keyboard="Text"></Entry>
+                    <Entry x:Name="EntryEmail" Placeholder="Email Adresiniz" Keyboard="Email"></Entry>
+                    <Entry x:Name="EntrySifre" Placeholder="Şifreniz" IsPassword="True"></Entry>
+                    
+                    
+                    <StackLayout Orientation="Horizontal">
+                            <CheckBox></CheckBox>
+                            <Label Text="Bilgiendirme e-postalarını almak istiyorum" FontSize="18"></Label>
+                        </StackLayout>
+                    
+            
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox></CheckBox>
+                    <Label Text="Bilgiendirme SMS'lerini almak istiyorum" FontSize="18"></Label>
+                </StackLayout>
+            
+            
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox></CheckBox>
+                    <Label Text="Gizlilik,Güvenlik Plitikasını okudum onaylıyorum" FontSize="18"></Label>
+                </StackLayout>
+
+
+            <Button Text="ÜYE OL" BackgroundColor="DarkRed" TextColor="White" FontSize="22" Clicked="Button_Clicked" ></Button>
+            <Button x:Name="Btnbackgir"  Text="GİRİŞ YAP" BorderWidth="2" BackgroundColor="White" BorderColor="DarkRed" TextColor="DarkRed" FontSize="22" Clicked="Btnbackgir_Clicked"></Button>
+        </StackLayout>
+        </Frame>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+
+
+
+
+                    
+</ContentPage>

@@ -1,12 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MadameCoco.ViewPages.YatakPage">
+             x:Class="MadameCoco.ViewPages.YatakPage"
+             Shell.NavBarIsVisible="False"
+             >
+         
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        
+        <StackLayout Orientation="Vertical">
+        <Frame BackgroundColor="White" >
+        <StackLayout Orientation="Horizontal" HeightRequest="40">
+                <ImageButton x:Name="Back3" Source="back.png" HorizontalOptions="StartAndExpand" WidthRequest="20" HeightRequest="20" Clicked="Back3_Clicked"></ImageButton>
+                <Label Text="YATAK ODASI" FontSize="20" TextColor="Black" FontAttributes="Bold" ></Label>
+                <ImageButton Source="basket.png" WidthRequest="40" HeightRequest="50" HorizontalOptions="EndAndExpand" Clicked="ImageButton_Clicked"></ImageButton>
         </StackLayout>
+        </Frame>
+            <Label Text="75 TL Üzeri Kargo Bedava" BackgroundColor="Gray" TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+            <StackLayout Orientation="Horizontal">
+                <SearchBar Placeholder="Arama" HorizontalOptions="Start" WidthRequest="300" HeightRequest="20"></SearchBar>
+                <ImageButton Source="barcode.png" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50" ></ImageButton>
+            </StackLayout>
+            <ScrollView>
+                <ListView x:Name="lst1" HasUnevenRows="True"  ItemsSource="{Binding YatakUrun}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="40">
+                                <Frame>
+                                   <StackLayout Orientation="Vertical"> 
+                                      <Image Source="{Binding Resim}"></Image>
+                                      <Label Text="{Binding Urun}" FontSize="20" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                                      <Label Text="{Binding Fıyat}" FontSize="45" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                                   </StackLayout> 
+                                 </Frame>
+                           </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+               </ScrollView> 
+        </StackLayout>
+        
     </ContentPage.Content>
+    
 </ContentPage>

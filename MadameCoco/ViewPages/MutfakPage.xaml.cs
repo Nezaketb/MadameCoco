@@ -1,4 +1,6 @@
 ﻿
+using MadameCoco.Veri;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +12,22 @@ namespace MadameCoco.ViewPages
         public MutfakPage()
         {
             InitializeComponent();
+            List<Urunler> mutfakUruns = new List<Urunler>
+            {
+                new Urunler {Urun="Majori Silinebilir Masa Örtüsü - Indigo - 140 cm", Fıyat="24,99" ,Resim="majorimasa.jpeg"},
+                new Urunler {Urun="Terre Seramik Tencere - 11 cm", Fıyat="24,99" ,Resim="terreseramiktencere.jpeg"}
+            };
+            lst3.ItemsSource = mutfakUruns;
+        }
+
+        private async void ImageButton_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new SepetPage());
+        }
+
+        private async void Back5_Clicked(object sender, System.EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//HomePage");
         }
     }
 }

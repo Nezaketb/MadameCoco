@@ -1,13 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "LjmZhjyq9pLT6gS0BflL/kphSxDDsdrWap62JpoZAq5psWt0IniIxYds783X/W9FOqf/qs06aB3if2V6Zbbq1Q==",
+  "dgSpecHash": "ofAnkSPpsgyKwPw2KsKrIsfRP5JzNzcujztF57zZFrrk1Ji3FSy5loUACHFCzZ2UcXlCS5xi8ACCoSuk0eS1JA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LenovA\\source\\repos\\MadameCoco\\MadameCoco.iOS\\MadameCoco.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LenovA\\.nuget\\packages\\nuget.exe\\3.4.3\\nuget.exe.3.4.3.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\LenovA\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2012\\xamarin.forms.visual.material.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\LenovA\\.nuget\\packages\\xamarin.ios.materialcomponents\\92.0.0\\xamarin.ios.materialcomponents.92.0.0.nupkg.sha512"
   ],
   "logs": []
 }

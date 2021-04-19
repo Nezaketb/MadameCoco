@@ -1,14 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MadameCoco.ViewPages.KayıtPage">
+             x:Class="MadameCoco.ViewPages.KayıtPage"
+             Title="GİRİŞ YAP" 
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False"
+             >
+
+    
     <ContentPage.Content>
-        <StackLayout>
-            <FlexLayout>
-               <ImageButton x:Name="backkayıtbtn" Source="back.png" WidthRequest="50" HeightRequest="50" Clicked="Backkayıtbtn_Clicked"></ImageButton>
-               <Label Text="GİRİŞ YAP" HorizontalOptions="Center" FontSize="Subtitle"/>
-             </FlexLayout>
+           
+        <StackLayout Orientation="Vertical">
+            <Frame>
+                <StackLayout Orientation="Horizontal">
+                <ImageButton x:Name="Btnback2" Source="back.png" HeightRequest="20" WidthRequest="20" HorizontalOptions="StartAndExpand" Clicked="Btnback2_Clicked"></ImageButton>
+                 <Label Text="GİRİŞ YAP" HorizontalOptions="StartAndExpand" FontSize="25" FontAttributes="Bold" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+         <Frame HorizontalOptions="Start" WidthRequest="300" Margin="30" BackgroundColor="White" BorderColor="Gray">
             
+            <StackLayout Orientation="Vertical">
+           
+            <Label Text="GİRİŞ YAP" TextColor="Black" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"></Label>
+            <Entry x:Name="MailEntry" Placeholder="E-posta" Keyboard="Email"></Entry>
+            <Entry x:Name="SifreEntry" Placeholder="Şifre" IsPassword="True"></Entry>
+            <Label x:Name="Hatalıgiris" TextColor="DarkRed" HorizontalTextAlignment="Center"></Label>
+            <Button x:Name="Btngiris" Text="GİRİŞ YAP" TextColor="White" BackgroundColor="DarkRed" Clicked="Btngiris_Clicked"></Button>
+            <Label Text="Şifrenizi mi unuttunuz?" HorizontalOptions="Center" ></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame WidthRequest="150" Margin="30" BorderColor="Gray" BackgroundColor="White">
+                <StackLayout Orientation="Vertical">
+                   <Label Text="HESABIM YOK" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" ></Label>
+                   <Label Text="Sipariş takibi, kolay iade ve daha fazlası için bir hesap oluşturun." FontSize="15" HorizontalTextAlignment="Center"></Label>
+                   <Button x:Name="Btnuye" Text="HESAP OLUŞTUR" BackgroundColor="White" BorderColor="DarkRed" TextColor="DarkRed" BorderWidth="3" Clicked="Btnuye_Clicked"></Button>
+                </StackLayout>
+            </Frame>
         </StackLayout>
+                
+           
+        
+        
+        
     </ContentPage.Content>
+        
+        
+        
 </ContentPage>
