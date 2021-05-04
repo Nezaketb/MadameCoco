@@ -33,5 +33,10 @@ namespace MadameCoco.ViewPages
         {
             await Navigation.PushModalAsync(new SepetPage());
         }
+
+        private void Button_Clicked(object sender, System.EventArgs e)
+        {
+            this.DisplayAlert("Sepete Eklendi", "1 adet ürün sepetinize eklendi.", "Alışverişe Devam Et", "Sepete Git");
+        }
     }
 }

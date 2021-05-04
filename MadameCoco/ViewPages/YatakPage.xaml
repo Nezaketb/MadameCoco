@@ -21,24 +21,32 @@
                 <ImageButton Source="barcode.png" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50" ></ImageButton>
             </StackLayout>
             <ScrollView>
-                <ListView x:Name="lst1" HasUnevenRows="True"  ItemsSource="{Binding YatakUrun}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid Padding="40">
-                                <Frame>
-                                   <StackLayout Orientation="Vertical"> 
-                                      <Image Source="{Binding Resim}"></Image>
-                                      <Label Text="{Binding Urun}" FontSize="20" HorizontalTextAlignment="Center" TextColor="Black"></Label>
-                                      <Label Text="{Binding Fıyat}" FontSize="45" HorizontalTextAlignment="Center" TextColor="Black"></Label>
-                                   </StackLayout> 
-                                 </Frame>
-                           </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-               </ScrollView> 
+                <Grid>
+                    <CollectionView x:Name="lst1"  VerticalScrollBarVisibility="Never" ItemsSource="{Binding YatakUrun}" >
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="20" HorizontalItemSpacing="20" Span="2"></GridItemsLayout>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Frame>
+                                        <StackLayout Orientation="Vertical">
+                                            <Image Aspect="AspectFill"  Source="{Binding Resim}"></Image>
+                                            <Label Grid.Row="1" Text="{Binding Urun}" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                                            <Label Grid.Row="1" Text="{Binding Fıyat}" TextColor="Black" FontSize="45" HorizontalTextAlignment="Center"></Label>
+                                            <Button Text="SEPETE EKLE" BackgroundColor="DarkRed" TextColor="White" Clicked="Button_Clicked"></Button>
+                                        </StackLayout>
+                                    </Frame>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </ScrollView> 
         </StackLayout>
         
     </ContentPage.Content>
