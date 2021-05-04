@@ -36,24 +36,24 @@ namespace MadameCoco.ViewPages
             var item = new RegUserTable()
             {
                 Name = EntryAd.Text,
-                Surname=EntrySoyad.Text,
-                Email=EntryEmail.Text,
-                Password=EntrySifre.Text
+                Surname = EntrySoyad.Text,
+                Email = EntryEmail.Text,
+                Password = EntrySifre.Text
 
-             };
-            
+            };
+
 
             db.Insert(item);
-            Device.BeginInvokeOnMainThread(async ()  =>
+            Device.BeginInvokeOnMainThread(async () =>
             {
-                var result = await this.DisplayAlert("Tebrikler","Kayıt olma işlemi başarılı","Anasayfaya git","Geri");
-                if(result)
+                var result = await this.DisplayAlert("Tebrikler", "Kayıt olma işlemi başarılı", "Anasayfaya git", "Geri");
+                if (result)
                 {
                     await Shell.Current.GoToAsync("//HomePage");
                 }
             }
                 );
-            
+
         }
     }
 }

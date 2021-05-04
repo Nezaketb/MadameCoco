@@ -26,9 +26,9 @@
                 <SearchBar Placeholder="Arama" HorizontalOptions="Start" WidthRequest="300" HeightRequest="20"></SearchBar>
                 <ImageButton Source="barcode.png" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50" ></ImageButton>
             </StackLayout>
-            
-            
-            
+
+
+
             <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/22/b6219bb5-4c6e-44ec-b6b9-293ea01cfdd0.jpg"></ImageButton>
             <ImageButton Source="https://cdn-mgsm.akinon.net/cms/2021/03/23/96149609-2799-44c9-b802-420e48238072.jpg"></ImageButton>
             <Label Text="Online'a Özel Kampanyalarımız" HorizontalOptions="Center" TextColor="Black" FontSize="15"></Label>

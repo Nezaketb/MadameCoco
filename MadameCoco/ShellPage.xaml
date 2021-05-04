@@ -28,7 +28,7 @@
         <ShellContent Route="MutfakPage" ContentTemplate="{DataTemplate local:MutfakPage}" />
     </FlyoutItem>
     <FlyoutItem Title="SOFRA">
-        <ShellContent Route="SofraPage" ContentTemplate="{DataTemplate local:SofraPage}" />
+        <ShellContent  />
     </FlyoutItem >
     <FlyoutItem Title="HALI-KİLİM">
         <ShellContent  />

@@ -10,8 +10,8 @@ namespace MadameCoco.ViewPages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class YatakPage : ContentPage
     {
-        
-            
+
+
         public YatakPage()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace MadameCoco.ViewPages
              new Urunler {Resim="audreywellsoft.jpg", Urun="Audrey Wellsoft Baskılı Çift Kişilik Battaniye - Turuncu",Fıyat="79,99"}
             };
             lst1.ItemsSource = yatakUruns;
-            
+
         }
 
         private async void Back3_Clicked(object sender, System.EventArgs e)

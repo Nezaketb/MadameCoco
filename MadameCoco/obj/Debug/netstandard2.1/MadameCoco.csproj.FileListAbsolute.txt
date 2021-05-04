@@ -5,7 +5,6 @@ C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\View
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\HomePage.xaml.g.cs
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\KayıtPage.xaml.g.cs
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\MutfakPage.xaml.g.cs
-C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\SofraPage.xaml.g.cs
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\UyePage.xaml.g.cs
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\YatakPage.xaml.g.cs
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\MadameCoco.AssemblyInfoInputs.cache

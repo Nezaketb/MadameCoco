@@ -19,7 +19,7 @@ namespace MadameCoco.ViewPages
                 new Urunler {Urun="Verney Kroşeli El Havlusu - Beyaz - 30x46 cm", Fıyat="17,49" ,Resim="verneyhavlu.jpeg"}
             };
             lst2.ItemsSource = banyoUruns;
-            
+
         }
 
         private async void Back4_Clicked(object sender, EventArgs e)
@@ -30,6 +30,11 @@ namespace MadameCoco.ViewPages
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new SepetPage());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            this.DisplayAlert("Sepete Eklendi", "1 adet ürün sepetinize eklendi.", "Alışverişe Devam Et", "Sepete Git");
         }
     }
 }

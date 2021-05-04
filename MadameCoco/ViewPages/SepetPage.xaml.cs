@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,7 +13,7 @@ namespace MadameCoco.ViewPages
             InitializeComponent();
         }
 
-       
+
 
         private async void Anasayfa_Clicked(object sender, EventArgs e)
         {
