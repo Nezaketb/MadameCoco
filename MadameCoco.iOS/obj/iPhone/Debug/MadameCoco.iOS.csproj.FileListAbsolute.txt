@@ -67,3 +67,7 @@ C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\SQLitePC
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\System.Buffers.dll
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\System.Memory.dll
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\DocumentFormat.OpenXml.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\MvvmHelpers.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\MvvmHelpers.pdb
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\System.IO.Packaging.dll

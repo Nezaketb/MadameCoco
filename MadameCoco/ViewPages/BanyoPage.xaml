@@ -18,6 +18,18 @@
                 <SearchBar Placeholder="Arama" HorizontalOptions="Start" WidthRequest="300" HeightRequest="20"></SearchBar>
                 <ImageButton Source="barcode.png" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50" ></ImageButton>
             </StackLayout>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Filter Items:" 
+               VerticalOptions="Center"/>
+                    <Picker ItemsSource="{Binding FilterOptions}" 
+                SelectedItem="{Binding SelectedFilter}" 
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <ListView x:Name="ItemsListView" 
+              ItemsSource="{Binding Items}"/>
+            </StackLayout>
             <ScrollView>
                 <Grid>
                 <CollectionView x:Name="lst2"  VerticalScrollBarVisibility="Never" ItemsSource="{Binding BanyoUrun}" >

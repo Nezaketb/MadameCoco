@@ -24,5 +24,9 @@ namespace MadameCoco.ViewPages
         {
             await Shell.Current.GoToAsync("//HomePage");
         }
+        private  void Button_Clicked(object sender, EventArgs e)
+        {
+            Anasayfa.Text = "Sepeti Onayla";
+        }
     }
 }

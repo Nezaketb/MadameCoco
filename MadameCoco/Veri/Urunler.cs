@@ -17,5 +17,11 @@
             get;
             set;
         }
+
+        public string Renk
+        {
+            get;
+            set;
+        }
     }
 }
