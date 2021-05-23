@@ -1,6 +1,11 @@
 ﻿
 using MadameCoco.Veri;
+using MvvmHelpers;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,8 +24,11 @@ namespace MadameCoco.ViewPages
             };
             lst3.ItemsSource = mutfakUruns;
         }
+      
 
-        private async void ImageButton_Clicked(object sender, System.EventArgs e)
+    
+
+    private async void ImageButton_Clicked(object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new SepetPage());
         }

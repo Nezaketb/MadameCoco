@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using MadameCoco.Veri;
+using Xamarin.Forms;
 
 namespace MadameCoco
 {
@@ -8,7 +9,8 @@ namespace MadameCoco
         {
             InitializeComponent();
 
-            MainPage = new ShellPage();
+             MainPage = new ShellPage();
+            //MainPage = new NavigationPage(new SettingsPage());
         }
 
         protected override void OnStart()

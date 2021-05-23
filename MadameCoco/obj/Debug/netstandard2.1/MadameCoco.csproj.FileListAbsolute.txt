@@ -20,3 +20,4 @@ C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ref\
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\MadameCoco.pdb
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\ViewPages\SepetPage.xaml.g.cs
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\MadameCoco.csprojAssemblyReference.cache
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco\obj\Debug\netstandard2.1\Veri\SettingsPage.xaml.g.cs

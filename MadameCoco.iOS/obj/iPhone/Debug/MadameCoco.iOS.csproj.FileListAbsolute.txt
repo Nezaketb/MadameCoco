@@ -71,3 +71,7 @@ C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\Document
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\MvvmHelpers.dll
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\MvvmHelpers.pdb
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\System.IO.Packaging.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\Firebase.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\LiteDB.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.iOS\bin\iPhone\Debug\System.Reactive.dll

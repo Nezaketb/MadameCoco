@@ -620,3 +620,8 @@ C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\MvvmHelpers.dll
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\MvvmHelpers.pdb
 C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\System.IO.Packaging.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\Firebase.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\LiteDB.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\System.Reactive.dll
+C:\Users\LenovA\source\repos\MadameCoco\MadameCoco.Android\obj\Debug\110\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll

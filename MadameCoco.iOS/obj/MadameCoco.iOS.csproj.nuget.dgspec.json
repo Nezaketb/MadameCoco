@@ -113,6 +113,10 @@
               "target": "Package",
               "version": "[2.13.0, )"
             },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.6, )"
+            },
             "NuGet.exe": {
               "target": "Package",
               "version": "[3.4.3, )"
