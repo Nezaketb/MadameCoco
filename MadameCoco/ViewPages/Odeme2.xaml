@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadameCoco.ViewPages.Odeme2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White" >
+                <StackLayout Orientation="Horizontal" HeightRequest="40">
+                    <ImageButton x:Name="Backbtn3" Source="back.png" HorizontalOptions="StartAndExpand" WidthRequest="20" HeightRequest="20" Clicked="Backbtn3_Clicked"></ImageButton>
+                    <Label Text="GÜVENLİ ÖDEME" HorizontalOptions="StartAndExpand" FontSize="20" TextColor="Black" FontAttributes="Bold" ></Label>
+                </StackLayout>
+            </Frame>
+            <Image Source="Odeme2.jpeg"></Image>
+            <Frame BackgroundColor="White" BorderColor="Gray">
+                <Label Text="ÖDEME SEÇENEKLERİ"></Label>
+            </Frame>
+            <Frame BackgroundColor="White" BorderColor="Gray">
+                <StackLayout>
+                <Label Text="Lütfen Kart bilgilerinizi yazın."></Label>
+                <Label Text="Kart Numarası"></Label>
+                <Entry Keyboard="Numeric"></Entry>
+                <Label Text="Son Kullanma Tarihi"></Label>
+                <Entry Keyboard="Numeric"></Entry>
+                <Label Text="CVC"></Label>
+                <Entry Keyboard="Numeric"></Entry>
+                <Button Text="ALIŞVERİŞİ TAMAMLA" BackgroundColor="DarkRed" TextColor="White" Clicked="Button_Clicked"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

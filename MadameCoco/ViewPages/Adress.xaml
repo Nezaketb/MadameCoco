@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadameCoco.ViewPages.Adress">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="White" >
+                <StackLayout Orientation="Horizontal" HeightRequest="40">
+                    <ImageButton x:Name="BackOdeme" Source="back.png" HorizontalOptions="StartAndExpand" WidthRequest="20" HeightRequest="20" Clicked="BackOdeme_Clicked"></ImageButton>
+                    <Label Text="GÜVENLİ ÖDEME" HorizontalOptions="StartAndExpand" FontSize="20" TextColor="Black" FontAttributes="Bold" ></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Black">
+                <Button ImageSource="x.png" HorizontalOptions="StartAndExpand" HeightRequest="20" WidthRequest="10" Clicked="Button_Clicked"></Button>
+            </Frame>
+            <Frame>
+                <Label Text="Adres Güncelleme" TextColor="Black" FontSize="20"></Label>
+            </Frame>
+            <Label Text="Başlık*" TextColor="Black"></Label>
+            <Entry Placeholder="örneğin:ev,iş..."></Entry>
+            <Label Text="Ad*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="Soyad*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="Cep Telefonu*" TextColor="Black"></Label>
+            <Entry Keyboard="Telephone"></Entry>
+            <Label Text="İl*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="İlçe*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="Adres*" TextColor="Black"></Label>
+            <Entry Placeholder="mahalle ,sokak,apartman adı ve numarası gibi diğer adres bilgilerinizi eksiksiz giriniz " Keyboard="Text"></Entry>
+            <Label Text="Posta Kodu" TextColor="Black"></Label>
+            <Entry Keyboard="Numeric"></Entry>
+            <Button Text="KAYDET VE DEVAM ET" BackgroundColor="DarkRed" TextColor="White" HorizontalOptions="Center" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

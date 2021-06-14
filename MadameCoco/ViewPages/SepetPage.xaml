@@ -1,23 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:MadameCoco.ViewModel" 
+             xmlns:vme="clr-namespace:MadameCoco.Models"
              x:Class="MadameCoco.ViewPages.SepetPage">
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
+    <ContentPage.BindingContext>
+        <vm:ShopCartViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
             <Frame>
                 <StackLayout Orientation="Horizontal">
                     <ImageButton x:Name="Bckbtn" Source="back.png" WidthRequest="30" HeightRequest="30" Clicked="Bckbtn_Clicked"></ImageButton>
                     <Label Text="Sepetim" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
                 </StackLayout>
             </Frame>
-            <Frame BackgroundColor="White" BorderColor="Gray" Margin="40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout Orientation="Vertical" Padding="20">
-                    <Label Text="Alışveriş Sepetiniz Boş." FontSize="30" TextColor="Black" HorizontalTextAlignment="Center"></Label>
-                    <Label Text="Sepetiniz şu an için boş" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"></Label>
-                    <Label Text="Alışverişe devam etmek için favori ürünlerinizi hemen sepetinize ekleyebilirsiniz." FontSize="20" TextColor="Black" HorizontalTextAlignment="Center"></Label>
-                </StackLayout>
-            </Frame>
-            <Button x:Name="Anasayfa" Text="ANASAYFAYA DÖN" BackgroundColor="DarkRed" TextColor="White" VerticalOptions="EndAndExpand" Clicked="Anasayfa_Clicked"></Button>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="MyListView"
+            ItemsSource="{Binding CartItems}"
+            HasUnevenRows="True">
+
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="vme:UserCartItem">
+                    <ViewCell>
+                        <Grid Padding="7">
+                            <Frame>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}" WidthRequest="120"/>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label VerticalOptions="Center"
+                                       FontSize="Medium"
+                                       Text="{Binding ProductName}" 
+                   Style="{DynamicResource ListItemTextStyle}" TextColor="Black"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="1">
+            <Button Text="Sepeti Sil" HorizontalOptions="FillAndExpand" BackgroundColor="DarkRed"  Font="Bold" FontSize="19" Clicked="SepetSil"/>
+            <Button Text="Hemen Al" HorizontalOptions="FillAndExpand" BackgroundColor="DarkRed"  TextColor="White" Font="Bold" FontSize="22" Clicked="HemenAl"/>
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </Grid>
+    </StackLayout>
+
+</ContentPage>  

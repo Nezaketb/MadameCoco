@@ -18,62 +18,15 @@
     <FlyoutItem Title="FAVORİLER" Icon="fav.png">
         <ShellContent Route="KayıtPage" ContentTemplate="{DataTemplate local:KayıtPage}" />
     </FlyoutItem>
-    <FlyoutItem   Title= "YATAK ODASI">
-        <ShellContent Route="YatakPage" ContentTemplate="{DataTemplate local:YatakPage}"/>
+    <FlyoutItem Title="URUNLER">
+        <ShellContent Route="Urun" ContentTemplate="{DataTemplate local:Urun}"></ShellContent>
     </FlyoutItem>
-    <FlyoutItem Title="BANYO">
-        <ShellContent Route="BanyoPage" ContentTemplate="{DataTemplate local:BanyoPage}" />
+    <FlyoutItem Title="KATAGORİLER">
+        <ShellContent Route="Katagoriler" ContentTemplate="{DataTemplate local:Katagoriler}"></ShellContent>
     </FlyoutItem>
-    <FlyoutItem Title="MUTFAK">
-        <ShellContent Route="MutfakPage" ContentTemplate="{DataTemplate local:MutfakPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="SOFRA">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="HALI-KİLİM">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="DEKORASYON">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="EV-YAŞAM">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="AYDINLATMA">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="KOZMETİK">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="MAĞAZALAR">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="DERGİ">
-        <ShellContent  />
-    </FlyoutItem >
-    <FlyoutItem Title="BİZE ULAŞIN">
-        <ShellContent />
-    </FlyoutItem >
     <FlyoutItem Title="ÇIKIŞ YAP" >
         <ShellContent Route="KayıtPage" ContentTemplate="{DataTemplate local:KayıtPage}" />
     </FlyoutItem>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </Shell>

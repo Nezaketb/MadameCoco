@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:MadameCoco.ViewModel" 
+             xmlns:vme="clr-namespace:MadameCoco.Models"
+             x:Class="MadameCoco.ViewPages.Urun">
+    <ContentPage.BindingContext>
+        <vm:ProductListViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Frame BackgroundColor="White" >
+                <StackLayout Orientation="Horizontal" HeightRequest="40">
+                    <ImageButton x:Name="Back4" Source="back.png"  WidthRequest="20" HeightRequest="20" Clicked="Back4_Clicked"></ImageButton>
+                    <Label Text="URUNLER" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" ></Label>
+                </StackLayout>
+            </Frame>
+            <Label Text="75 TL Üzeri Kargo Bedava" BackgroundColor="Gray" TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+            <SearchBar TextChanged="SearchBar_TextChanged"></SearchBar>
+            <ScrollView>
+                <Grid>
+                    <ListView HasUnevenRows="True" IsPullToRefreshEnabled="True" x:Name="PickList"  ItemsSource="{Binding Products}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate  x:DataType="vme:Product">
+                                <ViewCell>
+                                    <Frame>
+                                        <StackLayout Orientation="Vertical">
+                                            <Image  Aspect="AspectFit"  Source="{Binding ImageURL}" x:Name="Image"></Image>
+                                            <Button  Text="{Binding Name}"  TextColor="Black" FontSize="20"  x:Name="PName"></Button>
+                                            <Label  Text="{Binding Price}"  TextColor="Black" FontSize="45" HorizontalTextAlignment="Center" x:Name="PPrice"></Label>
+                                            <Label x:Name="Renklbl" Text="{Binding Renk}" TextColor="White"></Label>
+                                            <Button Text="SEPETE EKLE" BackgroundColor="DarkRed" TextColor="White"  ></Button>
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

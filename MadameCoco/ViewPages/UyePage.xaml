@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MadameCoco.ViewPages.UyePage"
+             xmlns:t="clr-namespace:MadameCoco.Tables"
              >
-    
+    <ContentPage.BindingContext>
+        <t:LoginViewModel></t:LoginViewModel>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
         <StackLayout Orientation="Vertical">
@@ -16,10 +19,10 @@
             <Frame BackgroundColor="White" BorderColor="Gray" Margin="30" WidthRequest="150">
                 <StackLayout Orientation="Vertical">
 
-                    <Entry x:Name="EntryAd" Placeholder="Ad" Keyboard="Text"></Entry>
-                    <Entry x:Name="EntrySoyad" Placeholder="Soyad" Keyboard="Text"></Entry>
-                    <Entry x:Name="EntryEmail" Placeholder="Email Adresiniz" Keyboard="Email"></Entry>
-                    <Entry x:Name="EntrySifre" Placeholder="Şifreniz" IsPassword="True"></Entry>
+                    <Entry x:Name="EntryAd" Text="{Binding Name}" Placeholder="Ad" Keyboard="Text"></Entry>
+                    <Entry x:Name="EntrySoyad" Text="{Binding Surname}" Placeholder="Soyad" Keyboard="Text"></Entry>
+                    <Entry x:Name="EntryEmail" Text="{Binding Email}" Placeholder="Email Adresiniz" Keyboard="Email"></Entry>
+                    <Entry x:Name="EntrySifre" Text="{Binding Password}" Placeholder="Şifreniz" IsPassword="True"></Entry>
                     
                     
                     <StackLayout Orientation="Horizontal">
@@ -40,7 +43,7 @@
                 </StackLayout>
 
 
-            <Button Text="ÜYE OL" BackgroundColor="DarkRed" TextColor="White" FontSize="22" Clicked="Button_Clicked" ></Button>
+            <Button Text="ÜYE OL" BackgroundColor="DarkRed" TextColor="White" FontSize="22" Command="{Binding RegisterCommand}" ></Button>
             <Button x:Name="Btnbackgir"  Text="GİRİŞ YAP" BorderWidth="2" BackgroundColor="White" BorderColor="DarkRed" TextColor="DarkRed" FontSize="22" Clicked="Btnbackgir_Clicked"></Button>
         </StackLayout>
         </Frame>

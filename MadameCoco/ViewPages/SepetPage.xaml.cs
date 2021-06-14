@@ -1,7 +1,10 @@
-﻿using System;
-
+﻿using MadameCoco.ViewModel;
+using System;
+using MadameCoco.Models;
+using MadameCoco.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Linq;
 
 namespace MadameCoco.ViewPages
 {
@@ -13,20 +16,28 @@ namespace MadameCoco.ViewPages
             InitializeComponent();
         }
 
-
-
-        private async void Anasayfa_Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("//HomePage");
-        }
-
         private async void Bckbtn_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("//HomePage");
         }
-        private  void Button_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            Anasayfa.Text = "Sepeti Onayla";
+            base.OnAppearing();
+            ShopCartViewModel scv = new ShopCartViewModel();
+            MyListView.ItemsSource = scv.CartItems;
+        }
+        private void SepetSil(object sender, EventArgs e)
+        {
+            CartItemService cis = new CartItemService();
+            cis.RemoveItemsFromCart();
+            ShopCartViewModel scv = new ShopCartViewModel();
+            scv.CartItems.Clear();
+            Navigation.PushAsync(new SepetPage());
+        }
+
+        private async void HemenAl(object sender, EventArgs e)
+        {
+             await Navigation.PushModalAsync(new Odeme());
         }
     }
-}
+    }

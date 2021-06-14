@@ -10,8 +10,8 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="basket.png" Clicked="ToolbarItem_Clicked"></ToolbarItem>
     </ContentPage.ToolbarItems>
+
     
-             
     
     <ScrollView>
         
@@ -19,7 +19,6 @@
             
              <Label Text="MADAME COCO" TextColor="Black"  FontSize="30" HorizontalTextAlignment="Center"></Label>
              <Label Text="75 TL Üzeri Kargo Bedava" HorizontalTextAlignment="Center" TextColor="Black" BackgroundColor="Gray" HorizontalOptions="Fill"></Label>    
-
 
             
             <StackLayout Orientation="Horizontal">

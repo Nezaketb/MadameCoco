@@ -4,11 +4,7 @@ namespace MadameCoco.Tables
 {
     class RegUserTable
     {
-        public Guid UserId
-        {
-            get;
-            set;
-        }
+       
 
         public string Name
         {

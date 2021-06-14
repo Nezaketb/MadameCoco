@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vme="clr-namespace:MadameCoco.Models"
+             xmlns:vm="clr-namespace:MadameCoco.ViewModel"
+             x:Class="MadameCoco.ViewPages.ProductListPage">
+    <ContentPage.BindingContext>
+        <vm:ProductListViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="1">
+        </StackLayout>
+
+        <ListView x:Name="MyListView"
+            ItemsSource="{Binding Products}"
+            HasUnevenRows="True"
+              ItemSelected="Product_Clicked">
+
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="vme:Product">
+                    <ViewCell>
+                        <Grid Padding="7">
+                            <Frame>
+                                    <StackLayout VerticalOptions="Center">
+                                         <Image Source="{Binding ImageURL}" x:Name="urunImage" WidthRequest="130"/>
+                                        <Label VerticalOptions="Center"
+                                       FontSize="Medium"
+                                       Text="{Binding  Name}"  x:Name="urunAd"
+                   Style="{DynamicResource ListItemTextStyle}" />
+                                        <Label VerticalOptions="Center"
+                                       FontSize="Small" x:Name="urunFiyat"
+                                       Text="{Binding Price}"
+                   Style="{DynamicResource ListItemTextStyle}"/>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </Grid>
+</ContentPage>
